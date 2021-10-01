@@ -183,6 +183,14 @@ li a{
 
 }
 
+#accordion{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin-bottom: 120px;
+}
+
 .card{
     /*background-color: black;*/
     /*margin: 10px;*/
