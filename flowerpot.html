@@ -23,6 +23,7 @@
 
     <link rel = "icon" href ="img/conc41.png" type = "image/x-icon">
 
+
 </head>
     <body>
 
@@ -97,11 +98,11 @@
 
 
 
-
+<script src="scripts/flowerpot.js"></script>
 
 <div class="abouts"><h2>FLOWERPOT</h2></div>
-    <div class="content-wrapper">
-        <div class="container">
+
+        <!-- <div class="container">
                 <div class="info-wrap">
                    <div class="info_img"> <img class="imgs" src="img/qotanski.jpg" alt="IMAGE"></div>
                     <div class="info-content">
@@ -120,8 +121,49 @@
                     </div>
                 </div>
 
+        </div> -->
+        <div id="accordion">
+      
         </div>
-    </div>
+     
+     
+     <script>
+      
+      
+      
+      const container = document.getElementById('accordion');
+      
+      apiResult.forEach((result, idx) => {
+        // Create card element
+        const card = document.createElement('div');
+        card.classList = 'card-body';
+      
+        // Construct card content
+        const content = `
+        <div class="content-wrapper">
+            <div class="info-wrap">
+                    <div class="info_img"> <img class="imgs" src="img/${result.title}.jpg" alt="IMAGE"></div>
+    
+                        <div class="info-content">
+                        <div class="card-details"><h2 class="card-availability">Available Colors</h2> <div class="colors">
+                            <div class="color" style="background-color:${result.Color}[0];"></div><div class="color" style="background: #111;"></div><div class="color" style="background: #111;"></div></div></div>
+    
+                            <div class="card-details"><h2 class="price">Price</h2><h1 class="p">GEL ${result.Price}&#x20BE;</h1></div>
+                        <div class="card-details"><h2 class="code">Code</h2><h1 class="p">${result.Code}</h1></div>
+                        <div class="card-details"><h2 class="size">Size</h2><h1 class="p">Height -${result.Size1}cm<br>Inner diameter-${result.Size2}cm<br>Outer diameter-${result.Size3}cm</h1></div>
+    
+    
+    
+                            </div>
+            </div>
+        </div>
+        `;
+      
+        // Append newyly created card element to the container
+        container.innerHTML += content;
+      })
+    </script>
+
 
 
     <div class="footer-container">

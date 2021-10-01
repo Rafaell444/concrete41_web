@@ -102,58 +102,115 @@
 
     <!--card products-->
 
-<div class="class-wrapper">
-    <div class="product-cards">
 
 
-        <div class="card_wrapper">
-            <div class="card">
-
-               <div class="card-img "> <img src="img/qotanski.jpg" alt="IMAGE"></div>
-                <a href="#" ><h1 class="prodname">Concrete FlowerPot</h1><h1 class="card-title lang" key="two">H - 20cm &ensp;Id-30cm &ensp;Od-33cm</h1></a>
-                <div class="card-details"><h2 class="card-availability">GEL 22,00&#x20BE;</h2> <div class="colors">
-                    <div class="color1"></div><div class="color2"></div><div class="color3"></div>
-                </div> </div>
+    <div class="class-wrapper">
+        <div class="product-cards">
+            <div id="accordion">
+      
             </div>
         </div>
+    </div>
 
 
-             <div class="card_wrapper">
-            <div class="card">
+         
+         
+         <script>
+          const apiResult = [{
+    title:"qotanski",
+    Color: "🔴🔴🔴🔴🔴",
+    Price: "12",
+    Code: "pot1",
+    Size1: "20",
+    Size2: "30",
+    Size3: "33"
+  }, {
+    title:"qotanski",
+    Color: "🔴",
+    Price: "20",
+    Code: "pot2",
+    Size1: "out1",
+    Size2: "out1",
+    Size3: "out1"
+  }, {
+    title:"qotanski",
+    Color: "🔴",
+    Price: "15",
+    Code: "pot3",
+    Size1: "out1",
+    Size2: "out1",
+    Size3: "out1"
+  },
+  {
+    title:"qotanski",
+    Color: "🔴",
+    Price: "15",
+    Code: "pot3",
+    Size1: "out1",
+    Size2: "out1",
+    Size3: "out1"
+  }, {
+    title:"qotanski",
+    Color: "🔴",
+    Price: "20",
+    Code: "pot2",
+    Size1: "out1",
+    Size2: "out1",
+    Size3: "out1"
+  }, {
+    title:"qotanski",
+    Color: "🔴",
+    Price: "15",
+    Code: "pot3",
+    Size1: "out1",
+    Size2: "out1",
+    Size3: "out1"
+  },
+  {
+    title:"qotanski",
+    Color: "🔴",
+    Price: "15",
+    Code: "pot3",
+    Size1: "out1",
+    Size2: "out1",
+    Size3: "out1"
+  }];
+          
+          
+          const container = document.getElementById('accordion');
+          
+          apiResult.forEach((result, idx) => {
+            // Create card element
+            const card = document.createElement('div');
+            card.classList = 'card-body';
+          
+            // Construct card content
+            const content = `
 
-               <div class="card-img"> <img src="img/qotanski.jpg" alt="IMAGE"></div>
-                <a href="#" ><h1 class="prodname">Concrete FlowerPot</h1><h1 class="card-title lang" key="two">H - 20cm &ensp;Id-30cm &ensp;Od-33cm</h1></a>
-                <div class="card-details"><h2 class="card-availability">GEL 22,00&#x20BE;</h2> <div class="colors">
+            <div class="card_wrapper">
+                <div class="card">
+
+                    <div class="card-img"> <img src="img/qotanski.jpg" alt="IMAGE"></div>
+                    <a href="#" ><h1 class="prodname">Concrete FlowerPot</h1><h1 class="card-title lang" key="two">H - 20cm &ensp;Id-30cm &ensp;Od-33cm</h1></a>
+                    <div class="card-details"><h2 class="card-availability">GEL 22,00&#x20BE;</h2> <div class="colors">
                     <div class="color4"></div><div class="color5"></div><div class="color6"></div>
-                </div> </div>
+                    </div> 
+                </div>
             </div>
-        </div>
-
-        <div class="card_wrapper">
-            <div class="card">
-
-               <div class="card-img"> <img src="img/qotanski.jpg" alt="IMAGE"></div>
-                <a href="#" ><h1 class="prodname">Concrete FlowerPot</h1><h1 class="card-title lang" key="two">H - 20cm &ensp;Id-30cm &ensp;Od-33cm</h1></a>
-                <div class="card-details"><h2 class="card-availability">GEL 22,00&#x20BE;</h2> <div class="colors">
-                    <div class="color4"></div><div class="color5"></div><div class="color6"></div>
-                </div> </div>
-            </div>
-        </div>
-
-
-
-        </div>
-
-
-
-            </div>
+    
+            `;
+          
+            // Append newyly created card element to the container
+            container.innerHTML += content;
+          })
+        </script>
 
 
         <!-- collections --->
 
 
 
-        <div class="footer-container">
+        <div class="footer-container" >
             <div class="footer">
                 <div class="footer-heading footer-1">
                     <h2 class="lang" key="seven">Quick Links</h2>
