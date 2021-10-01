@@ -17,7 +17,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -79,7 +79,7 @@ overflow-x:hidden;
     height: 181px;
     /*left: 0;*/
     /*top: 0;*/
-    font-family: "Bebas Neue",serif;
+    font-family: inherit;
     font-size: 30px;
     color:#000 !important;
 
@@ -89,7 +89,7 @@ background: #FFD700;
 ul {
   list-style-type: none;
     display: flex;
-    font-family:"Bebas Neue", "BPG Nino Mtavruli",serif;
+    font-family:"BPG Nino Mtavruli","serif";
  }
 li.smths{
     margin-left: 35px;
@@ -104,7 +104,7 @@ li a{
     margin-top:4px ;
     display:flex;
     align-items:center;
-    font-family:"Bebas Neue", "BPG Nino Mtavruli",serif;
+    font-family:"BPG Nino Mtavruli","serif";
 }
 
 .trans{
@@ -116,6 +116,10 @@ li a{
 
 
 
+}
+
+#pp{
+    margin-left: 90px;
 }
 .trans1{
     background: transparent;
@@ -152,7 +156,7 @@ li a{
     color: #818181;
     display: block;
     transition: 0.3s;
-      font-family: bpglecaps, serif;
+      font-family: "BPG Nino Mtavruli","serif";
   }
 
   /* When you mouse over the navigation links, change their color */
@@ -180,8 +184,8 @@ li a{
 .abouts h2{
      text-align: center;
     margin-top:51px;
-    font-size: 50px;
-    font-family: Bebas Neue, serif;
+    font-size: 35px;
+    font-family: "Bebas Neue", serif;
 }
 
 /*.aboutstxt{*/
@@ -189,7 +193,7 @@ li a{
 /*    margin-left: 350px;*/
 /*    margin-top: 34px;*/
 /*    font-size: 20px;*/
-/*    font-family: Arial,serif;*/
+/*    font-family: "BPG Nino Mtavruli","serif";*/
 /*    margin-bottom: 250px;*/
 /*    line-height: 3rem;*/
 /*}*/
@@ -255,7 +259,7 @@ li a{
 .card-availability{
 
     font-size: 25px;
-    font-family: Arial,serif;
+    font-family: "BPG Nino Mtavruli","serif";
 
 
 }
@@ -264,7 +268,7 @@ li a{
     display: flex;
     justify-content: center;
     /*align-items: center;*/
-    margin-left:30px;
+    margin-left:100px;
 
 
 }
@@ -359,7 +363,7 @@ h2.card-availability{
 h1.p{
    text-align: left;
     margin-left: 130px;
-    font-family: Arial,serif;
+    font-family: "BPG Nino Mtavruli","serif";
     font-size: 25px;
     line-height: 30px;
 
@@ -371,17 +375,17 @@ h1.p{
 }
 
 .price{
-    font-family: Arial,serif;
+    font-family: "BPG Nino Mtavruli","serif";
     font-size: 25px;
 }
 
 .code{
-    font-family: Arial,serif;
+    font-family: "BPG Nino Mtavruli","serif";
     font-size: 25px;
 }
 
 .size{
-    font-family: Arial,serif;
+    font-family: "BPG Nino Mtavruli","serif";
     font-size: 25px;
 }
 
@@ -417,7 +421,7 @@ h1.p{
     display: flex;
     flex-direction: column;
     margin-right: 4rem;
-    font-family:"Bebas Neue", "BPG Nino Mtavruli",serif;
+    font-family:"BPG Nino Mtavruli","serif";
 }
 
 .footer-heading h2{
@@ -442,7 +446,7 @@ h1.p{
     margin-bottom: 2rem;
     font-size:25px;
     margin-right: 150px;
-    font-family:"Bebas Neue", "BPG Nino Mtavruli",serif;
+    font-family:"BPG Nino Mtavruli","serif";
 
 }
 
@@ -562,7 +566,7 @@ h1.p{
     overflow-x:hidden;
 }
 .footerbelow p{
-    font-family: Bebas Neue, serif;
+    font-family: "BPG Nino Mtavruli","serif";
     font-size: 20px;
     padding-left: 325px;
     padding-top: 30px;
@@ -637,6 +641,10 @@ box-shadow:         0px -6px 17px 0px rgba(50, 50, 50, 0.4);
     }
     .footer-heading{
         margin-right: 0;
+    }
+
+    #cont{
+        margin-left: 50px;
     }
 
 
