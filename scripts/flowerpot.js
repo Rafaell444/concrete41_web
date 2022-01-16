@@ -1,5 +1,5 @@
 const apiResult = [{
-    title:"qotanski",
+    title:"qotania",
     Color1: "#111",
     Color2: "yellow",
     Color3: "",
